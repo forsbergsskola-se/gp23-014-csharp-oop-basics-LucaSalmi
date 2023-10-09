@@ -1,9 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-
-
-
-
 var person = new Person();
 var animal = new Animal();
 var car = new Car();
@@ -16,8 +12,3 @@ void Print(Object toPrint)
 {
     Console.WriteLine(toPrint);
 }
-
-public class Person{}
-public class Animal{}
-public class Car{}
-

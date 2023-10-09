@@ -1,21 +1,22 @@
 ﻿// See https://aka.ms/new-console-template for more information
+Print(CreateListOfPeople(5));
+return;
 
-
-var personOne = new Person();
-var personTwo = new Person();
-var personThree = new Person();
-Person[] listOfPeople = {personOne, personTwo, personThree};
-foreach (var person in listOfPeople)
+void Print(Person[] listToPrint)
 {
-    Print(person);
-}
-void Print(Object toPrint)
-{
-    Console.WriteLine(toPrint);
+    foreach (var person in listToPrint)
+    {
+        Console.WriteLine(person);
+    }
 }
 
-
-public class Person
+Person[] CreateListOfPeople(int amount)
 {
-    //LOL
+    var list = new Person[amount];
+    for (var i = 0; i < amount; i++)
+    {
+        list[i] = new Person();
+    }
+
+    return list;
 }
