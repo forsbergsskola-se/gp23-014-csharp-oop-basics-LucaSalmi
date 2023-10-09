@@ -4,9 +4,9 @@
 
 
 
-Person person = new Person();
-Animal animal = new Animal();
-Car car = new Car();
+var person = new Person();
+var animal = new Animal();
+var car = new Car();
 
 Print(person);
 Print(animal);
