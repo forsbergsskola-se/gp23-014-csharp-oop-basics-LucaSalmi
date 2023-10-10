@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P4Attack", "P4Attack\P4Atta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P5Classified", "P5Classified\P5Classified.csproj", "{9F527166-22F8-4513-BD33-423465575CAA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P6GoodKnight", "P6GoodKnight\P6GoodKnight.csproj", "{DA35DE91-E0AA-4CA9-96C5-BB72931B032E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{9F527166-22F8-4513-BD33-423465575CAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F527166-22F8-4513-BD33-423465575CAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F527166-22F8-4513-BD33-423465575CAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA35DE91-E0AA-4CA9-96C5-BB72931B032E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA35DE91-E0AA-4CA9-96C5-BB72931B032E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA35DE91-E0AA-4CA9-96C5-BB72931B032E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA35DE91-E0AA-4CA9-96C5-BB72931B032E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
