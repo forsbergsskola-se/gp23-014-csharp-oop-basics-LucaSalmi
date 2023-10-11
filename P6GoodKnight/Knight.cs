@@ -4,9 +4,9 @@ public class Knight
 {
     public Shield shield = new Shield(false);
     public Sword sword = new Sword(false);
-    public bool isWounded = false;
+    private bool isWounded = false;
 
-    public void GetHit(Sword weapon)
+    private void GetHit(Sword weapon)
     {
         if (weapon.isEquipped)
         {
@@ -20,7 +20,7 @@ public class Knight
         }
     }
 
-    public void GetWounded()
+    private void GetWounded()
     {
         isWounded = true;
         Console.WriteLine("The knight has no shield and is wounded.");
