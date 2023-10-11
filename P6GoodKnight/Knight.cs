@@ -2,12 +2,44 @@
 
 public class Knight
 {
-    public Shield shield;
-    public Sword sword;
-    
-    public void EquipShield(){}
-    public void EquipSword(){}
-    public void GetHit(){}
-    public void Attack(){}
-    
+    public Shield shield = new Shield(false);
+    public Sword sword = new Sword(false);
+    public bool isWounded = false;
+
+    public void GetHit(Sword weapon)
+    {
+        if (weapon.isEquipped)
+        {
+            if (weapon.IsAttackSuccessfull(shield))
+            {
+                GetWounded();
+                return;
+            }
+
+            shield.isEquipped = false;
+        }
+    }
+
+    public void GetWounded()
+    {
+        isWounded = true;
+        Console.WriteLine("The knight has no shield and is wounded.");
+    }
+
+    public void Attack(Knight target)
+    {
+        if (!sword.isEquipped)
+        {
+            Console.WriteLine("Knight attacks with Bare Hands.");
+            if (!target.shield.IsBlocking())
+            {
+                target.GetWounded();
+            }
+
+            return;
+        }
+
+        Console.WriteLine("Knight attacks Knight with a Sword.");
+        target.GetHit(sword);
+    }
 }
